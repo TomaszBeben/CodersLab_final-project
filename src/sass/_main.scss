@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+li {
+    display: block;
+    border: 1px solid black;
+    &:hover {
+        background-color: gray;
+        width: 110%;
+        transition: 0.5s;
+    }
+}
