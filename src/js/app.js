@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './../sass/style.scss'; // adres do głównego pliku SASS
 import Main from './main';
 import Content from './content';

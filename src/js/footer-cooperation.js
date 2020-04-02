@@ -6,7 +6,7 @@ const Cooperation = () => {
     
     return(
     <>
-     <h1>tu sie pochwalisz co tam se zdobyles i z kim pracowales</h1>
+     <h1><i class="fab fa-facebook-square"></i></h1>
      </>
      )
 }

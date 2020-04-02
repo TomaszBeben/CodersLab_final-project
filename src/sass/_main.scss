@@ -3,21 +3,96 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: 1rem;
-    border: 1px solid black;
+    max-width: 14%;
 }
 
 .logo {
+    color: black;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
     font-size: 2rem;
     font-weight: bold;
-    border: 1px solid black;
-}
-
-li {
-    display: block;
-    border: 1px solid black;
+    cursor: pointer;
+    max-height: 9%;
     &:hover {
-        background-color: gray;
-        width: 110%;
+        color: #888888;
         transition: 0.5s;
     }
 }
+
+.li {
+    font-weight: bold;
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Comic Neue', cursive;
+    &:hover {
+        border-radius: 0 10% 10% 0;
+        background-color: #888888;
+        width: 102%;
+        transition: 0.5s;
+    }
+    & a:-webkit-any-link {
+        font-family: 'Comic Neue', cursive;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.icons {
+    display: flex;
+    width: 5%;
+    height: 10px;
+    margin: 1rem;
+    size: 1rem;
+}
+
+.one_icon {
+    margin: 1rem;
+    size: 2rem;
+}
+
+.fab {
+    font-size: 2rem;
+    color: #888888;
+}
+
+.book-text {
+    font-family: 'Comic Neue', cursive;
+    margin-top: 10px;
+    margin-bottom: 5xp;
+    text-decoration: auto;
+    list-style: disc;
+    margin-left: 19px;
+}
+
+.book-photos {
+    max-width: 500px;
+    cursor: auto;
+}
+
+.headers {
+    margin-bottom: 2rem;
+    font-family: 'Comic Neue', cursive;
+}
+
+.strong {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.text-about li {
+    font-family: 'Comic Neue', cursive;
+    margin-top: 10px;
+    margin-bottom: 5xp;
+    text-decoration: auto;
+    list-style: disc;
+    margin-left: 19px;
+    ;
+}
+
+// li {
+//     margin-top: 10px;
+//     margin-bottom: 5px;
+// }

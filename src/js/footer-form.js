@@ -9,10 +9,11 @@ const Form = () => {
     const[phone, setPhone]=useState("")
     const[email, setEmail]=useState("")
     const[message, setMessage]=useState("")
-    const [error, setError] = useState("");
 
     const submitButton= e =>{
-        e.preventDefault()
+        e.preventDefault();
+        let err = '';
+
         const storageData = {
             "imię":name,
             "telefon":phone,
@@ -23,22 +24,41 @@ const Form = () => {
         localStorage.setItem("formularz", JSON.stringify(storageData))
         
         if(name.length < 3){
-            setError("imię musi zawierać przynajmniej 3 znaki");
+            err = ("imię musi zawierać przynajmniej 3 znaki");
         }else if (email.length < 2 || email.indexOf("@") === -1){
-            setError("adres email musi posiadać znak '@' i mięć conajmniej 2 znaki")
+            err = ("adres email musi posiadać znak '@' i mięć conajmniej 2 znaki")
         }
+
+        if(err === '') {
+            setName('');
+            setPhone('');
+            setEmail('');
+            setMessage('');
+        } else {
+            alert(err);
+        }
+
     }
     
     return (
         <>
-        {error && alert(error)}
         <div className="formStyle">
-        <form >
-            <input type="text" placeholder="imię i nazwisko" value={name} onChange={e => setName(e.target.value)} />
-            <input type="text" placeholder="numer telefonu" value={phone} onChange={e => setPhone(e.target.value)}/>
+        <form onSubmit={submitButton} >
+            <div className="form-info">
+            <p className="icon-box">
+            <h1 className="form-icon"><i class="fas fa-phone-volume fab"></i></h1>
+            <h1 className="form-icon-text">nr telefonu</h1>
+            </p>
+            <p className="icon-box">
+            <h1 className="form-icon"><i class="fas fa-at fab"></i></h1>
+            <h1 className="form-icon-text">email</h1>
+            </p>
+            </div>
+            <input type="text" placeholder="name" value={name} onChange={e => setName(e.target.value)} />
+            <input type="text" placeholder="phone number" value={phone} onChange={e => setPhone(e.target.value)}/>
             <input type="email" placeholder="email" value={email} onChange={e => setEmail(e.target.value)}/>
             <textarea rows="3" cols="50" value={message} onChange={e => setMessage(e.target.value)}/>
-            <input onClick={submitButton} type="submit" value="Wyślij"/>
+            <input className="form-button" type="submit" value="SEND"/>
         </form>
         </div>
         </>

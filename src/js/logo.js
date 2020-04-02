@@ -6,7 +6,9 @@ import './../sass/style.scss';
 const Logo = () =>{
     
     return (
-        <h1 className="logo">LOGO</h1>
+        <a className="logo" href="/">
+            <h1 className="logo">Wiktor <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kubiak</h1>
+        </a>
     )
 }
 

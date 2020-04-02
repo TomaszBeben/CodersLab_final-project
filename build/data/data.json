@@ -1,50 +1,21 @@
 {
     "projects": [{
         "id": "1",
-        "name": "project 1",
-        "img_1": "1.bmp",
-        "img_2": "2.bmp",
-        "img_3": "3.bmp",
-        "img_4": "4.bmp",
-        "img_5": "5.bmp",
-        "img_6": "6.bmp"
+        "name": "Jungle",
+        "count": 14
 
     }, {
         "id": "2",
-        "name": "project 2",
-        "img_1": "1.bmp",
-        "img_2": "2.bmp",
-        "img_3": "3.bmp",
-        "img_4": "4.bmp",
-        "img_5": "5.bmp",
-        "img_6": "6.bmp"
+        "name": "Kleofas",
+        "count": 14
     }, {
         "id": "3",
-        "name": "project 3",
-        "img_1": "1.bmp",
-        "img_2": "2.bmp",
-        "img_3": "3.bmp",
-        "img_4": "4.bmp",
-        "img_5": "5.bmp",
-        "img_6": "6.bmp"
+        "name": "Matejko",
+        "count": 11
     }, {
         "id": "4",
-        "name": "project 4",
-        "img_1": "1.bmp",
-        "img_2": "2.bmp",
-        "img_3": "3.bmp",
-        "img_4": "4.bmp",
-        "img_5": "5.bmp",
-        "img_6": "6.bmp"
-    }, {
-        "id": "5",
-        "name": "project 6",
-        "img_1": "1.bmp",
-        "img_2": "2.bmp",
-        "img_3": "3.bmp",
-        "img_4": "4.bmp",
-        "img_5": "5.bmp",
-        "img_6": "6.bmp"
+        "name": "Facetime",
+        "count": 14
     }]
 
 }

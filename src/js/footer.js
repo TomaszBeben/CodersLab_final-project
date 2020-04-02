@@ -13,10 +13,12 @@ const Footer = () => {
 
         <HashRouter >
             <ul >
-                <li > < Link to = "/about" > O Mnie </Link></li >
-                <li > < Link to = "/form" > Kontakt </Link></li >
-                <li > < Link to = "/cooperation" > Współpraca </Link></li >
-                <li > < Link to = "/IdontKnow" > jeszcze nie wiem </Link></li >
+                <li className="li"> < Link to = "/about" > About </Link></li >
+                <li className="li"> < Link to = "/form" > Contact </Link></li >
+                <div className="icons">
+                    <li className="one_icon"> < Link to = "/cooperation" ><i class="fab fa-facebook-square"></i></Link></li >
+                    <li className="one_icon"> < a href="https://wiktorkubiak.tumblr.com"><i class="fab fa-tumblr"></i></a></li >
+                </div>
             </ul> 
         </HashRouter>
 
