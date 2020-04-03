@@ -5,7 +5,9 @@ import './../sass/style.scss';
 const Clock = () => {
     const now = new Date(); 
     const mins = now.getMinutes() * 60;
-    const hours = now.getHours() * 3600;
+    const hours = now.getHours() * 60 * 60;
+    console.log(hours);
+    
     
     
     return (

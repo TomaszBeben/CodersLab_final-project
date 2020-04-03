@@ -69,6 +69,10 @@
 .book-photos {
     max-width: 500px;
     cursor: auto;
+    &:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
 }
 
 .headers {

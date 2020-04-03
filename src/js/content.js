@@ -8,6 +8,7 @@ import About from './footer-about';
 import Menu from './menu';
 import Project from './project';
 import Book from './book'
+import Logo from "./logo"
 
 
 const Content = () => {
@@ -15,6 +16,7 @@ const Content = () => {
         <h1 className="content" >
             <Switch >
                 <div className="pictures_container" >
+                    {/* <Route exact path="/" component={Logo}/> */}
                     <Route exact path="/book" component={Book}/>
                     <Route exact path="/form" component={Form}/>
                     <Route exact path="/cooperation" component={Cooperation}/>
