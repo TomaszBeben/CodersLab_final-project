@@ -28,7 +28,7 @@ const Project = props => {
     for(let i=1; i<=count; i++) {
         const  img = <img className="images" src={`./build/images/projekt ${props.match.params.id}/${i}.jpg`} />
         images.push(
-            <Popup trigger={ img } position="center" EventType="focus">
+            <Popup trigger={ img } >
                  { img }
             </Popup>
         )

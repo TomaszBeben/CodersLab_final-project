@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Switch, Route, Link } from "react-router-dom";
+import Iframe from 'react-iframe'
 
 const About = () => {
     
@@ -19,7 +19,11 @@ const About = () => {
              <li>Exhibition at Silesian Press Photography 2013</li>
              <li>Group exhibition at Rybnik Photo Festival 2013</li>
          </ul>
-     </div>
+    {/* <div >
+         <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150788.1723674307!2d-1.6758154639322334!3d53.80612364025756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793e4ada64bd99%3A0x51adbafd0213dca9!2sLeeds%2C%20Wielka%20Brytania!5e0!3m2!1spl!2spl!4v1585904537206!5m2!1spl!2spl" style={{width="500", height="400", frameBorder="0", style="border:0;", allowFullScreen="false", ariaHidden="false", tabIndex="0"}} ></iframe>
+         </div> */}
+    </div>
+     
      </>
      )
 }

@@ -8,15 +8,16 @@ img {
 }
 
 .popup-content {
-    display: flex;
-    top: 250px;
-    left: 0;
+    // display: flex;
+    // top: 250px;
+    left: 250px !important;
     width: 800px !important;
     height: 640px !important;
     background: none !important;
     border: none !important;
     box-shadow: none !important;
-    top: 50px !important;
+    top: 150px !important;
+    display: relative;
 }
 
 .popup-arrow {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './../sass/style.scss'; // adres do głównego pliku SASS
 import Main from './main';
 import Content from './content';
-import Description from './description';
+import Clock from './clock';
 
 
 const App = () =>{
@@ -11,7 +11,7 @@ const App = () =>{
         <div className="appContainer">
         <Main/>
         <Content/>
-        <Description/>
+        <Clock/>
         </div>
     )
 }
